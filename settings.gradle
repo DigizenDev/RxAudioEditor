@@ -1,1 +1,1 @@
-include ':sample', ':AudioLib'
+include ':app', ':libray'
