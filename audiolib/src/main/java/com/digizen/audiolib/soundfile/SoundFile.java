@@ -509,7 +509,7 @@ public class SoundFile {
         int numChannels = (mChannels == 1) ? 2 : mChannels;
 
         String mimeType = "audio/mp4a-latm";
-        int bitrate = 64000 * numChannels;  // rule of thumb for a good quality: 64kbps per channel.
+        int bitrate = Integer.valueOf(64000) * numChannels;  // rule of thumb for a good quality: 64kbps per channel.
         MediaCodec codec = MediaCodec.createEncoderByType(mimeType);
         MediaFormat format = MediaFormat.createAudioFormat(mimeType, mSampleRate, numChannels);
         format.setInteger(MediaFormat.KEY_BIT_RATE, bitrate);
