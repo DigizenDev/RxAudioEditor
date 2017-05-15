@@ -25,7 +25,7 @@ import com.digizen.audiolib.soundfile.SoundFile;
 import java.nio.ShortBuffer;
 
 
-class SamplePlayer {
+public class SamplePlayer {
     public interface OnCompletionListener {
         public void onCompletion();
     };
